@@ -1,0 +1,66 @@
+% \documentclass[lineno,twocolumn,endfloat,biblatex]{biophys-new}
+\documentclass{biophys-new}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[colorlinks,allcolors=cyan!70!black]{hyperref}
+
+% Uncomment if using biblatex
+% \addbibresource{sample.bib}
+
+\usepackage{lipsum}
+
+\title{New Biophysical Journal Template}
+\runningtitle{Biophysical Journal Template} %% For page header
+
+\author[1,*]{First author}
+\author[2]{Second author}
+\runningauthor{Author1 and Author2} %% For page header
+
+\affil[1]{Institution A, Address A}
+\affil[2]{Institution B, Address B}
+
+\corrauthor[*]{abx@xyz.edu}
+
+% \papertype{Letters}
+\papertype{Article}
+% \papertype{Computational Tools}
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+\input{abstract.tex}
+
+\end{frontmatter}
+
+\input{intro.tex}
+
+\input{results.tex}
+
+
+\input{discussion.tex}
+
+\section*{Conclusion}
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+
+\section*{Author Contributions}
+
+Author1 designed the research. Author2 carried out all simulations, analyzed the data. Author1 and Author2 wrote the article. 
+
+\section*{Acknowledgments}
+
+We thank G. Harrison, B. Harper, and J. Doe for their help.
+
+% Uncomment if using bibtex (default)
+\bibliography{sample}
+
+% Uncomment if using biblatex
+% \printbibliography
+
+\section*{Supplementary Material}
+
+An online supplement to this article can be found by visiting BJ Online at \url{http://www.biophysj.org}.
+
+\end{document}

@@ -1,0 +1,11 @@
+\section*{Discussion}
+
+\LaTeX{} formats citations and references automatically using the bibliography records in your .bib file, which you can edit via the project menu. Use the \verb|\cite| command to insert a citation, like this: \cite{Chen_Nicholson00} Multiple citations can be given as \cite{Stiles_Bartol01,el-Kareh_etal93,Callaghan91}. You can use either BibTeX or biblatex: see the following subsections.
+
+If your manuscript is accepted, the Biophysical production team will re-format the references for publication. \emph{It is not necessary to format the reference list yourself to mirror the final published form.}
+
+\subsection*{Using bibtex} 
+This is the default. Specify your \texttt{.bib} file with \verb|\bibliography{sample}| (the extension is unnecessary) near the end of your manuscript, where you want the references list to appear.
+
+\subsection*{Using biblatex} 
+Pass the \texttt{biblatex} option to the \verb|\documentclass| declaration, then specify your \texttt{.bib} file name in the \emph{preamble}: \verb|\addbibresources{sample.bib}| (the extension is necessary). Write \verb|\printbibliography| near the end of your manuscript where you want the references to appear.
